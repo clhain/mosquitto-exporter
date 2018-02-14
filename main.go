@@ -25,6 +25,7 @@ var (
 		"$SYS/broker/clients/active":   "deprecated in favour of $SYS/broker/clients/connected",
 		"$SYS/broker/clients/inactive": "deprecated in favour of $SYS/broker/clients/disconnected",
 	}
+        counterKeyMetrics = map[string]string{}
 	gaugeKeyMetrics = map[string]string{
 		"$SYS/broker/bytes/received":            "The total number of bytes received since the broker started.",
 		"$SYS/broker/bytes/sent":                "The total number of bytes sent since the broker started.",
